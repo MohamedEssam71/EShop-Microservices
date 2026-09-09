@@ -1,1 +1,12 @@
-<Solution />
+<Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="C:/Users/legion/source/repos/EShopMicroservices/src/BuidlingBlocks/BuildingBlocks/BuildingBlocks.csproj" Id="f59b840c-e452-423e-b4ed-277daddbc9f8" />
+  </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/Catalog/">
+    <Project Path="C:/Users/legion/source/repos/EShopMicroservices/src/Services/Catalog/Catalog.API/Catalog.API.csproj" Id="a20b7fff-535e-4c51-a465-b4db078cbd85" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>
