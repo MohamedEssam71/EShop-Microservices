@@ -3,6 +3,9 @@
     <Project Path="C:/Users/legion/source/repos/EShopMicroservices/src/BuidlingBlocks/BuildingBlocks/BuildingBlocks.csproj" Id="f59b840c-e452-423e-b4ed-277daddbc9f8" />
   </Folder>
   <Folder Name="/Services/" />
+  <Folder Name="/Services/Basket/">
+    <Project Path="Services/Basket/Basket.API/Basket.API.csproj" Id="b0f5a75d-93ad-481b-b839-84d4fbb21f5d" />
+  </Folder>
   <Folder Name="/Services/Catalog/">
     <Project Path="C:/Users/legion/source/repos/EShopMicroservices/src/Services/Catalog/Catalog.API/Catalog.API.csproj" Id="a20b7fff-535e-4c51-a465-b4db078cbd85" />
   </Folder>
