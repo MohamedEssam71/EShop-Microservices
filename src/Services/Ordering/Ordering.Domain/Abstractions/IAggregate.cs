@@ -1,6 +1,4 @@
-﻿using Ordering.Domain.Abastractions;
-
-namespace Ordering.Domain.Abstractions
+﻿namespace Ordering.Domain.Abstractions
 {
     public interface IAggregate<T> : IAggregate, IEntity<T>
     {
