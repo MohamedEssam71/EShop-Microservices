@@ -4,10 +4,13 @@ services:
 
   basketdb:
     image: postgres
-
+  
   distributedcache:
     image: redis
   
+  orderdb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+
   catalog.api:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
