@@ -48,6 +48,5 @@ namespace Ordering.Infrastructure.Data.Extensions
                 await context.SaveChangesAsync();
             }
         }
-
     }
 }
