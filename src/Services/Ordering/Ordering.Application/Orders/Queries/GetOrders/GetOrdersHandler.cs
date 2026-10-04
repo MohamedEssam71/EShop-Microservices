@@ -1,7 +1,4 @@
-﻿using BuildingBlocks.Pagination;
-using Ordering.Application.Extensions;
-
-namespace Ordering.Application.Orders.Queries.GetOrders
+﻿namespace Ordering.Application.Orders.Queries.GetOrders
 {
     public class GetOrdersHandler(IApplicationDbContext dbContext)
         : IQueryHandler<GetOrdersQuery, GetOrdersResult>
@@ -24,9 +21,7 @@ namespace Ordering.Application.Orders.Queries.GetOrders
                     pageIndex,
                     pageSize,
                     count,
-                    orders.ToOrderDtoList()
-                    ));
-            
+                    orders.ToOrderDtoList())); 
         }
     }
 }
