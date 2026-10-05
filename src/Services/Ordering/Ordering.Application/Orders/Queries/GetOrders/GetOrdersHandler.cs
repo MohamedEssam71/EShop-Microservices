@@ -7,11 +7,11 @@
         {
             var pageIndex = query.PaginationRequest.PageIndex;
             var pageSize = query.PaginationRequest.PageSize;
-            var count = await dbContext.OrderItems.LongCountAsync(cancellationToken);
+            var count = await dbContext.Orders.LongCountAsync(cancellationToken);
 
             var orders = await dbContext.Orders
                 .Include(o => o.OrderItems)
-                .OrderBy(o => o.OrderName)
+                .OrderBy(o => o.OrderName.Value)
                 .Skip(pageSize * pageIndex)
                 .Take(pageSize)
                 .ToListAsync(cancellationToken);
