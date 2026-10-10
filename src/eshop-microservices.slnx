@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/BuildingBlocks/">
+    <Project Path="BuidlingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj" Id="141e1ac4-5e99-4438-828a-f8d968ae21c9" />
     <Project Path="C:/Users/legion/source/repos/EShopMicroservices/src/BuidlingBlocks/BuildingBlocks/BuildingBlocks.csproj" Id="f59b840c-e452-423e-b4ed-277daddbc9f8" />
   </Folder>
   <Folder Name="/Services/" />
