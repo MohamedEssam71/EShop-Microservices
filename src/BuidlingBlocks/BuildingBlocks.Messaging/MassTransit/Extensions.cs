@@ -21,7 +21,7 @@ namespace BuildingBlocks.Messaging.MassTransit
                 {
                     configurator.Host(new Uri(configuration["MessageBroker:Host"]!), host =>
                     {
-                        host.Username(configuration["MessageBroker:Username"]!);
+                        host.Username(configuration["MessageBroker:UserName"]!);
                         host.Password(configuration["MessageBroker:Password"]!);
                     });
                     configurator.ConfigureEndpoints(context);

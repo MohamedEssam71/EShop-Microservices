@@ -6,7 +6,7 @@
 
         public DateTime OccurredOn=> DateTime.UtcNow;
 
-        public string EventName => GetType().AssemblyQualifiedName!;
+        public string EventName => GetType().AssemblyQualifiedName;
 
     }
 }
