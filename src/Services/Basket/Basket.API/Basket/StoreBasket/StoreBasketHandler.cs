@@ -34,8 +34,6 @@ namespace Basket.API.Basket.StoreBasket
                 var coupon = await discountProto.GetDiscountAsync(new GetDiscountRequest { ProductName = item.ProductName }, cancellationToken: cancellationToken);
                 item.Price -= coupon.Amount;
             }
-
-
         }
     }
 }
