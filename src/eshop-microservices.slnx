@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/ApiGatways/">
+    <Project Path="ApiGatways/YarpApiGatway/YarpApiGatway.csproj" Id="aa87cf2b-599d-4c3e-b73d-5319fb8d72e5" />
+  </Folder>
   <Folder Name="/BuildingBlocks/">
     <Project Path="BuidlingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj" Id="141e1ac4-5e99-4438-828a-f8d968ae21c9" />
     <Project Path="C:/Users/legion/source/repos/EShopMicroservices/src/BuidlingBlocks/BuildingBlocks/BuildingBlocks.csproj" Id="f59b840c-e452-423e-b4ed-277daddbc9f8" />
