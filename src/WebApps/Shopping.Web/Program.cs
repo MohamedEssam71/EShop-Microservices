@@ -8,6 +8,12 @@ builder.Services.AddRefitClient<ICatalogService>()
     {
         c.BaseAddress = new Uri(builder.Configuration["ApiSettings:GatwayAddress"]!);
     });
+builder.Services.AddRefitClient<IBasketService>()
+    .ConfigureHttpClient(c =>
+    {
+        c.BaseAddress = new Uri(builder.Configuration["ApiSettings:GatwayAddress"]!);
+    });
+
 
 var app = builder.Build();
 
