@@ -48,6 +48,7 @@ The system models a small online shop:
 **Synchronous vs asynchronous communication.** The UI reaches Catalog, Basket and Ordering over HTTP through the gateway. When a basket is stored, Basket calls Discount over **gRPC** because it needs the answer immediately to price the cart. At checkout, Basket instead publishes a `BasketCheckoutEvent` to **RabbitMQ** through MassTransit and does not wait for Ordering, which consumes the event and creates the order on its own schedule. Request/response where the caller needs the result, events where it does not.
 
 ## Architecture
+
 ```mermaid
 flowchart LR
     User([Browser]) -->|HTTP| Web["Shopping.Web<br/>Razor Pages + Refit"]
