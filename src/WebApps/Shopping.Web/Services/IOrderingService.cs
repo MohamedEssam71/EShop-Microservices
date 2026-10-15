@@ -7,9 +7,9 @@ namespace Shopping.Web.Services
         Task<GetOrderResponse> GetOrders(int? pageIndex = 1, int? pageSize = 10);
 
         [Get("/ordering-service/orders/customer/{customerId}")]
-        Task<GetOrdersByCustomerResponse> GetOrderByCustomer(Guid customerId);
+        Task<GetOrdersByCustomerResponse> GetOrdersByCustomer(Guid customerId);
 
         [Get("/ordering-service/orders/{orderName}")]
-        Task<GetOrdersByNameResponse> GetOrderByName(string orderName);
+        Task<GetOrdersByNameResponse> GetOrdersByName(string orderName);
     }
 }
