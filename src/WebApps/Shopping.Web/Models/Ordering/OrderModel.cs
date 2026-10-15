@@ -1,6 +1,4 @@
-﻿using Shopping.Web.Models.Ordering;
-
-namespace Shopping.Web.Models.Order
+﻿namespace Shopping.Web.Models.Ordering
 {
     public record OrderModel
     (
@@ -24,6 +22,7 @@ namespace Shopping.Web.Models.Order
         Cancelled = 4
     }
 
+    public record PaginationRequest(int PageIndex = 0, int PageSize = 10);
     public record GetOrderResponse(PaginationResult<OrderModel> Orders);
     public record GetOrdersByCustomerResponse(IEnumerable<OrderModel> Orders);
     public record GetOrdersByNameResponse(IEnumerable<OrderModel> Orders);
