@@ -49,13 +49,6 @@ The system models a small online shop:
 
 ## Architecture
 ```mermaid
-graph TD;
-    A[Start] --> B(Process);
-    B --> C{Decision};
-    C -- Yes --> D[Result 1];
-    C -- No --> E[Result 2];
-```
-```mermaid
 flowchart LR
     User([Browser]) -->|HTTP| Web["Shopping.Web<br/>Razor Pages + Refit"]
 
