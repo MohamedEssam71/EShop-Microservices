@@ -31,6 +31,7 @@ public class IndexModel
                     Color = "Black"
                 }
             );
+        await basketService.StoreBasket(new StoreBasketRequest(basket));
         return RedirectToPage("Cart");
     }
     
